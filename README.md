@@ -5,7 +5,7 @@ author: Simorjay
 ms.date: 06/27/2018
 ---
 
-# Azure HIPAA/HITRUST Health Data and AI - Extension
+# Azure HIPAA/HITRUST Health Data and AI - Extension (PREVIEW)
 
 ## Overview
 
