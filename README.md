@@ -61,7 +61,7 @@ Deploy the [Azure Security and Compliance Data and AI Health Blueprint](./deploy
 Details to the original solution can be found at the [Azure Security and Compliance Blueprint - HIPAA/HITRUST Health Data and AI](https://docs.microsoft.com/en-us/azure/security/blueprints/azure-health) resource.
 
 ## Deploy the IaaS lockdown configurations ##
-In this step use of the deployIaaS.ps1 script found in the [deployment folder](.\Deployment) will Deploy the Health data and AI (Extension) The script will enable the following capabilities
+In this step use of the deployIaaS.ps1 script found in the [deployment folder](./Deployment) will Deploy the Health data and AI (Extension) The script will enable the following capabilities
 
 1.	Turns on ASC auto-provisioning for all IaaS VMs in subscription
 2.	Sets up AAD application ID and service principal, for key vault authentication
