@@ -9,7 +9,6 @@ ms.date: 07/12/2018
 
 
 
-## Health Blueprint (add-on) to address SAW, and Azure Security ASC
 
 The HIPAA/HITRUST Health Data and AI - (Extension) provides customers the ability to deploy the health blueprint to include a hybrid/x-premises deployment to understand how Azure Security Center and other 
 security technologies such as end point host protection would work in the Healthcare solution.
