@@ -10,27 +10,27 @@ ms.date: 07/12/2018
 
 
 
-The HIPAA/HITRUST Health Data and AI - (Extension) provides customers the ability to deploy the health blueprint to include a hybrid/x-premises deployment to understand how Azure Security Center and other 
+The HIPAA/HITRUST Health Data and AI - Extension provides customers the ability to deploy the health blueprint to include a hybrid IaaS deployment to understand how Azure Security Center and other 
 security technologies such as end point host protection would work in the Healthcare solution.
-This solution will help expose the effort to migration an on-premise SQL based solutions to Azure, and the need to use a Privileged Access Workstation (PAW) to securely manage all cloud based services and solutions.
+This solution will help expose the effort to migrate an on-premise SQL based solution to Azure, and to implment a Privileged Access Workstation (PAW) to securely manage all cloud based services and solutions.
 
-What makes this health data and AI - extention unique is that it cover the extensions of the PaaS Health-Data-and-AI-Blueprint, show-casing best practices and possible approaches to address the following new points:
+What makes this health data and AI - extention unique is that it covers the extensions of the PaaS Health-Data-and-AI-Blueprint, demonstraing best practice and possible approaches to address the following new points:
 
-1.	Extend the existing PaaS sample to show secure co-existence between PaaS and IaaS VM work-load elements.
-2.	“Start Secure” – enable security capabilities and monitoring of the IaaS VM work-load before any sensitive data or work-load processing takes place.
+1.	Extend the existing PaaS sample to show secure co-existence between PaaS and IaaS VM workload elements.
+2.	“Start Secure” – enable security capabilities and monitoring of the IaaS VM workload before any sensitive data or workload processing takes place.
 3.	Illustrate how to use recently introduced security and deployment capabilities.
 
 The deployment of the IaaS VM includes usage of Azure Security Center, network security group and network access lockdown, auto-update capability for patch management, usage of encryption at rest capabilities, usage of eventlog audit log collection and monitoring capabilities, usage of managed service identity, automated encrypted backup capabilities, and more.
 
-The Blueprint will extend the demonstration that will:
+This blueprint extension will extend the current Health blueprint to:
 
-**INGEST** data raw sources including FHIR data source
+**INGEST** data including FHIR data source
 
-**STORE** sensitive information (in both a Windows SQL2017 server, and Azure PaaS solution)
+**STORE** sensitive and reglulated health information (in both a Windows SQL2017 server, and Azure PaaS solution)
 
 **ANALYZE** and predict outcomes (using an existing Machine Learning solution)
 
-**INTERACT** with the results and perditions (using an existing PowerBi  solution)
+**INTERACT** with the results and preditions (using an existing PowerBi solution)
 
 **IDENTITY** management of solution (Azure Active Directory and role-based access control (RBAC))
 
@@ -45,7 +45,7 @@ The Blueprint will extend the demonstration that will:
 
 ## Setting up a Privileged Access Workstation (PAW) ##
 
-It is essential that before any deployment is started a known 'good clean client' is configured to connect to the cloud. This can be done in varied levels of security assurance. Ideally it is recommended that a **Privileged Access Workstation** be set up and all administrators operate in the constrains of the secured client model.
+It is essential that before any deployment is started a known 'good client' is configured to connect to the cloud. This can be done in varied levels of security assurance. Ideally it is recommended that a **Privileged Access Workstation** be set up and all administrators operate in the constraints of the secured client model.
 
 Deploy a PAW solution to ensure that management of the services is done in a secure service model. 
 This step is recommended to ensure that no access be done to subscription management without a isolated client host. 
@@ -53,7 +53,7 @@ Review [Privileged Access Workstation (PAW) for details.](https://docs.microsoft
 
 ## Setting up Pre-Requisites and enabling services ##
 
-The Deploy the Health data and AI (Extension) solution will require the configuration and set up including the configuration of a clean client install host, and service rights to deploy the components. This can be found in the Run **deploy.ps1** with the **installModules** switch to install and verify all components are correctly set up of the [deployment guide](./deployment.md).
+The Deploy the Health data and AI - Extension solution will require the configuration and set up including the configuration of a known good client install host, and service rights to deploy the components. This can be found in the Run **deploy.ps1** with the **installModules** switch to install and verify all components are correctly set up of the [deployment guide](./deployment.md).
 
 ## Setting up the PaaS based health data and AI solution ##
 
