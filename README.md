@@ -57,11 +57,11 @@ The Deploy the Health data and AI (Extension) solution will require the configur
 
 ## Setting up the PaaS based health data and AI solution ##
 
-Deploy the [Azure Security and Compliance Data and AI Health Blueprint](./deployment.md) will install the core elements of the PaaS solution. This includes all of the platform-as-a-service (PaaS) environment for ingesting, storing, analyzing, and interacting with personal and non-personal medical records in a secure, multi-tier cloud environment, deployed as an end-to-end solution. It showcases a common reference architecture and is designed to simplify adoption of Microsoft Azure.
+Deploy the [Azure Security and Compliance Data and AI Health Blueprint](https://github.com/Azure/Azure-Health-Extension) will install the core elements of the PaaS solution. This includes all of the platform-as-a-service (PaaS) environment for ingesting, storing, analyzing, and interacting with personal and non-personal medical records in a secure, multi-tier cloud environment, deployed as an end-to-end solution. It showcases a common reference architecture and is designed to simplify adoption of Microsoft Azure.
 Details to the original solution can be found at the [Azure Security and Compliance Blueprint - HIPAA/HITRUST Health Data and AI](https://docs.microsoft.com/en-us/azure/security/blueprints/azure-health) resource.
 
 ## Deploy the IaaS lockdown configurations ##
-In this step use of the deployIaaS.ps1 script found in the [deployment folder](./Deployment) will Deploy the Health data and AI (Extension) The script will enable the following capabilities
+In this step use of the deployIaaS.ps1 script found in the [Blueprint/Deployment](./Deployment) folder, will Deploy the Health data and AI (Extension) The script will enable the following capabilities
 
 1.	Turns on ASC auto-provisioning for all IaaS VMs in subscription
 2.	Sets up AAD application ID and service principal, for key vault authentication
@@ -92,7 +92,7 @@ The script upon completing will move 10,000 new patient records that have been l
 
 
  View revised data in PowerBi (PowerBI dashboard will be updated)
-The solution provides a simple Microsoft PowerBI visualization of the solution. Microsoft PowerBI is required to open the sample report located (Using PowerBi free edition works for this demo, but will not allow for reports to be shared) [Blueprint\Deployment\Reports](.\Deployment\Reports)
+The solution provides a simple Microsoft PowerBI visualization of the solution. Microsoft PowerBI is required to open the sample report located (Using PowerBi free edition works for this demo, but will not allow for reports to be shared) [Blueprint/Deployment/Reports](https://github.com/Azure/Azure-Health-Extension) 
 
 
 
@@ -104,17 +104,17 @@ The solution provides a simple Microsoft PowerBI visualization of the solution. 
 # Deploying the solution 
 
 
-**[Solution Overview](./readme.ms)** 
+**[Solution Overview](./readme.md)** 
 
 
 [![](./images/deploy.png)](./deployment.md) (with IaaS extention)
 
 **[FAQ](./faq.md)** 
 
-**[Threat model](./files/Azure_Security_and_Compliance_Blueprint_HIPAAHITRUST_Health_Data_AI-ThreatModel_with_IaaS_Extention.tm7)**
+**[files/Azure_Security_and_Compliance_Blueprint_HIPAAHITRUST_Health_Data_AI-ThreatModel_with_IaaS_Extention.tm7](https://github.com/Azure/Azure-Health-Extension) **
 
 
-**[Customer Responsibility Matrix](./Files/HITRUST_Health_Data_and_AI_extention_Customer_Responsibility_Matrix_CRM_v9.xlsx)**
+**[files/HITRUST_Health_Data_and_AI_extention_Customer_Responsibility_Matrix_CRM_v9.xlsx](https://github.com/Azure/Azure-Health-Extension) **
 
 
 
