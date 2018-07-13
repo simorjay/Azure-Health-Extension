@@ -543,7 +543,7 @@ the database by clicking **Refresh** again in Power BI.
 
 
 # Disclaimer and acknowledgments
-February 2018
+July 2018
 
 This document is for informational purposes only. MICROSOFT AND AVYAN MAKE NO WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY, AS TO THE INFORMATION IN THIS DOCUMENT. This document is provided “as-is.” Information and views expressed in this document, including URL and other Internet website references, may change without notice. Customers reading this document bear the risk of using it.
 This document does not provide customers with any legal rights to any intellectual property in any Microsoft or Avyan product or solutions.
@@ -572,4 +572,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 John Doyle (WW Health Industry Microsoft)
 
-Frank Simorjay (Global Ecosystem Microsoft)
+Scott Feild (Azure Core Security)
+
+Frank Simorjay (Azure Core Security)
+
