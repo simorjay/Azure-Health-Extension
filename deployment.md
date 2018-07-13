@@ -1,5 +1,4 @@
-# Azure Security and Compliance Blueprint - HIPAA/HITRUST Health Data and AI
-
+# Azure HIPAA/HITRUST Health Data and AI - with (IaaS Extension) PREVIEW
 
 ## Deployment guide
 
@@ -76,7 +75,15 @@ that the solution requires.
 ```
 This command deploys the solution and sets a single common password for all solution users, for testing purposes.
 
-**Example 3: Uninstall the solution**
+**Example 3: Deploying the IaaS based extention**
+This capabilitiy has been added to the solution as to show-case best practices and possible approaches following scenarios:
+1.	Extend the existing PaaS sample to show secure co-existence between PaaS and IaaS VM work-load elements.
+2.	“Start Secure” – enable security capabilities and monitoring of the IaaS VM work-load before any sensitive data or work-load processing takes place.
+3.	Illustrate  recently introduced security and deployment capabilities features of ASC.
+
+
+
+**Uninstall the solution**
 ```
 .\deploy.ps1 -clearDeploymentPrefix <deployment-prefix> 
              -tenantId <tenant-id>
@@ -88,6 +95,22 @@ This command deploys the solution and sets a single common password for all solu
 ``` 
 Uninstalls the solution, removing all resource groups, service principles, AD applications, and AD users.
 
+
+ 
+##  deployIaaS.ps1 usage (Health Extention)
+
+DeployIaaS.ps1 should be run once the deployment of the solution has been completed. This health extention will provide additonal capabilities, including the addition of at Windows Server VM, and SQL server deployment.
+```
+.\deployIaaS.ps1 -deploymentPrefix <prefix>
+             -tenantId <tenant-id>
+             -tenantDomain <tenant-domain>
+             -subscriptionId <subscription-id>
+             -globalAdminUsername <username>
+             -deploymentPassword <password>
+             -enableMFA
+
+```
+This command deploys the IaaS solution for testing purposes.
 
 
 
