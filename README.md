@@ -5,7 +5,11 @@ author: Simorjay
 ms.date: 07/12/2018
 ---
 
+<<<<<<< HEAD
 # Azure HIPAA/HITRUST Health Data and AI - with (IaaS Extension) PREVIEW
+=======
+# Azure HIPAA/HITRUST Health Data and AI - Extension (PREVIEW)
+>>>>>>> 21290a7731785008d252ebda8b93d9f24641c08d
 
 
 
