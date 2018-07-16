@@ -1,4 +1,4 @@
----
+﻿---
 title: HIPAA/HITRUST Health Data and AI - Extension PREVIEW
 description: Guidance for deploying the on premise host, and PAW for the Health Data & AI Blueprint
 author: Simorjay 
@@ -62,24 +62,30 @@ Details to the original solution can be found at the [Azure Security and Complia
 
 ## Deploy the IaaS lockdown configurations ##
 In this step use of the deployIaaS.ps1 script found in the [Blueprint/Deployment](./Deployment) folder, will Deploy the Health data and AI (Extension) The script will enable the following capabilities
+Execution of the IaaS extension deployment happens in three stages:
 
-1.	Turns on ASC auto-provisioning for all IaaS VMs in subscription
-2.	Sets up AAD application ID and service principal, for key vault authentication
-3.	Enables ASC and OMS monitoring at resource group level (new APIs)
-4.	Deploys latest SQL2017 instance running on windows 2016
-5.	Sets up VM admin account using strong random password and username
-6.	Sets up VM with zero exposed inbound internet access, via network security group configuration
-7.	Configures OMS workspace elements for VM monitoring
-8.	Enables mandatory storage encryption and https usage for all used storage accounts
-9.	Configures two Azure KeyVault instances with HSM and soft-delete capability, one instance used by SQL, and one instance used by Azure Disk Encryption, using separate access policies
-10.	Enables Azure disk encryption, using new deployment model that doesn’t require dedicated Application ID and service principal provisioning
-11.	Enables and configures Microsoft Anti-malware
-12.	Enables Microsoft monitoring agent, for VM eventlog and security audit log collection and retention in storage account
-13.	Enables SqlIaaS extension: scheduled maintenance and patching window, Azure keyvault integration for TDE, and automated encrypted backup support
-14.	Uses managed service identity, for Sql IaaS VM using PaaS authentication
-15.	Network security group and subnet access will be enabled to lockdown access between SQL IaaS VM and PaaS SQL instance
-16.	The new VM will be configured for security and monitoring and a sample health data set is will be deployed to the IaaS VM
-
+### Phase 1:  Initial deployment and setup. ###
+1.	Turns on ASC auto-provisioning for all IaaS VMs in subscription.
+2.	Sets up AAD application ID and service principal, for key vault authentication.
+3.	Enables ASC and OMS monitoring at resource group level (new APIs).
+4.	Deploys latest SQL2017 instance running on windows 2016.
+5.	Sets up VM admin account using strong random password and username.
+6.	Sets up VM with zero exposed inbound internet access, via network security group configuration.
+7.	Configures OMS workspace elements for VM monitoring.
+8.	Enables mandatory storage encryption and https usage for all used storage accounts.  SQL backup and provisioning artifacts accounts use VNET firewall rules, and SAS token access for provisioning artifacts, to block access to these assets from unauthorized systems or from the internet.
+9.	Configures two Azure KeyVault instances with HSM and soft-delete capability, one instance used by SQL, and one instance used by Azure Disk Encryption, using separate access policies.
+### Phase 2:  Applying security policies and monitoring capabilities. ###
+1.	Enables Azure disk encryption, using new deployment model that doesn’t require dedicated Application ID and service principal provisioning.
+2.	Enables and configures Microsoft Anti-malware.
+3.	Enables Microsoft monitoring agent, for VM eventlog and security audit log collection and retention in Azure storage account.
+4.	Enables SqlIaaS extension: scheduled maintenance & patching window, Azure keyvault integration for TDE, and automated encrypted backup support.
+5.	Enables SQL AD based administration of existing PaaS database instance.
+6.	Network security group and subnet access used to lockdown access between SQL IaaS VM and PaaS SQL instance.
+7.	Uses managed service identity, for Sql IaaS VM -> SQL PaaS authentication.
+### Phase 3: Deploying and executing payload to deployed VM. ###
+1.	Customscript extension execution illustrates “lift and shift” of on-premise exported data to the SQL IaaS VM instance, without opening internet facing ports.
+2.	Sample health data set is deployed to the IaaS VM and imported into the SQL instance.
+3.	IaaS VM to PaaS SQL database query is issued, using Virtual Machine managed service identity authentication.
 
 
 
