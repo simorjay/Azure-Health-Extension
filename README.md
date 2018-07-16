@@ -1,9 +1,4 @@
-﻿---
-title: HIPAA/HITRUST Health Data and AI - Extension PREVIEW
-description: Guidance for deploying the on premise host, and PAW for the Health Data & AI Blueprint
-author: Simorjay 
-ms.date: 07/12/2018
----
+﻿
 
 # Azure HIPAA/HITRUST Health Data and AI - Extension (PREVIEW)
 
