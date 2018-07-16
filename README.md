@@ -85,9 +85,12 @@ in three Phases:
 ### Phase 3: Deploying and executing payload to deployed VM. ###
 1.	Customscript extension execution illustrates “lift and shift” of on-premise exported data to the SQL IaaS VM instance, without opening internet facing ports.
 2.	Sample health data set is deployed to the IaaS VM and imported into the SQL instance.
-3.	IaaS VM to PaaS SQL database query is issued, using Virtual Machine managed service identity authentication.
-
-
+3.	IaaS VM to PaaS SQL database query is issued, using Virtual Machine managed service identity authentication.  
+NOTE - The VM will be isolated to an Azure Vnet. To gain access to the IaaS VM, you will require to add and a local inbound port rule to allow 3389 for rdp connection to the VM
+ address. Additional the VM's password will require to be rereset. 
+ 
+ 
+ 
 
 
 ![](images/ra2.png)
