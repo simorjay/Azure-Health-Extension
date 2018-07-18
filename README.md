@@ -108,17 +108,16 @@ The solution provides a simple Microsoft PowerBI visualization of the solution. 
 # Deploying the solution 
 
 
-**[Solution Overview](./readme.md)** 
+[Solution Overview](./readme.md)
 
 
 [![](./images/deploy.png)](./deployment.md) (with IaaS extention)
 
-**[FAQ](./faq.md)** 
+[FAQ](./faq.md)
 
-**[files/Azure_Security_and_Compliance_Blueprint_HIPAAHITRUST_Health_Data_AI-ThreatModel_with_IaaS_Extention.tm7](https://github.com/Azure/Azure-Health-Extension)**
+[files/Azure_Security_and_Compliance_Blueprint_HIPAAHITRUST_Health_Data_AI-ThreatModel_with_IaaS_Extention.tm7](https://github.com/Azure/Azure-Health-Extension)
 
-
-**[files/HITRUST_Health_Data_and_AI_extention_Customer_Responsibility_Matrix_CRM_v9.xlsx](https://github.com/Azure/Azure-Health-Extension)**
+[files/HITRUST_Health_Data_and_AI_extention_Customer_Responsibility_Matrix_CRM_v9.xlsx](https://github.com/Azure/Azure-Health-Extension)
 
 
 
