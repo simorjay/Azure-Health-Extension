@@ -7,9 +7,9 @@
 
 The HIPAA/HITRUST Health Data and AI - Extension provides customers the ability to deploy the health blueprint to include a hybrid IaaS deployment to understand how Azure Security Center and other 
 security technologies such as end point host protection would work in the Healthcare solution.
-This solution will help expose the effort to migrate an on-premise SQL based solution to Azure, and to implment a Privileged Access Workstation (PAW) to securely manage all cloud based services and solutions.
+This solution will help expose the effort to migrate an on-premise SQL based solution to Azure, and to implement a Privileged Access Workstation (PAW) to securely manage all cloud based services and solutions.
 
-What makes this health data and AI - extention unique is that it covers the extensions of the PaaS Health-Data-and-AI-Blueprint, demonstraing best practice and possible approaches to address the following new points:
+What makes this health data and AI - extention unique is that it covers the extension of the PaaS Health-Data-and-AI-Blueprint, demonstrating best practice and possible approaches to address the following new points:
 
 1.	Extend the existing PaaS sample to show secure co-existence between PaaS and IaaS VM workload elements.
 2.	“Start Secure” – enable security capabilities and monitoring of the IaaS VM workload before any sensitive data or workload processing takes place.
@@ -21,15 +21,15 @@ This blueprint extension will extend the current Health blueprint to:
 
 **INGEST** data including FHIR data source
 
-**STORE** sensitive and reglulated health information (in both a Windows SQL2017 server, and Azure PaaS solution)
+**STORE** sensitive and regulated health information (in both a Windows SQL2017 server, and Azure PaaS solution)
 
 **ANALYZE** and predict outcomes (using an existing Machine Learning solution)
 
-**INTERACT** with the results and preditions (using an existing PowerBi solution)
+**INTERACT** with the results and predictions  (using an existing PowerBi solution)
 
 **IDENTITY** management of solution (Azure Active Directory and role-based access control (RBAC))
 
-**SECURITY** enabled features (Including Azure Security Center,Operations Management Suite (OMS), and Application Insights
+**SECURITY** enabled features (Including Azure Security Center, Operations Management Suite (OMS), and Application Insights
 )
 
 
@@ -115,10 +115,10 @@ The solution provides a simple Microsoft PowerBI visualization of the solution. 
 
 **[FAQ](./faq.md)** 
 
-**[files/Azure_Security_and_Compliance_Blueprint_HIPAAHITRUST_Health_Data_AI-ThreatModel_with_IaaS_Extention.tm7](https://github.com/Azure/Azure-Health-Extension) **
+**[files/Azure_Security_and_Compliance_Blueprint_HIPAAHITRUST_Health_Data_AI-ThreatModel_with_IaaS_Extention.tm7](https://github.com/Azure/Azure-Health-Extension)**
 
 
-**[files/HITRUST_Health_Data_and_AI_extention_Customer_Responsibility_Matrix_CRM_v9.xlsx](https://github.com/Azure/Azure-Health-Extension) **
+**[files/HITRUST_Health_Data_and_AI_extention_Customer_Responsibility_Matrix_CRM_v9.xlsx](https://github.com/Azure/Azure-Health-Extension)**
 
 
 
