@@ -155,7 +155,7 @@ Subscriptions such as BizSpark, where there is a spending limit, the use of opti
              -tenantDomain <tenant-domain> `
              -subscriptionId <subscription-id> `
              -globalAdminUsername <username> `
-             -deploymentPassword Hcbnt54%kQoNs62`
+             -deploymentPassword <>`
              -appInsightsPlan 2            
 ```
 
